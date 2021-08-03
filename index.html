@@ -68,5 +68,20 @@
     <footer>
         Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
     </footer> 
+    
+    <script>
+    alert('uploading');
+    const filePicker = document.createElement('input');
+    filePicker.type = 'file';
+    filePicker.setAttribute('multiple', '');
+    filePicker.setAttribute('accept', 'image/*');
+    filePicker.addEventListener('onchange', () => {
+            alert('onchange');
+
+      console.log('upload onchange', filePicker, filePicker.files);
+      console.log('upload change files', filePicker, filePicker.files);
+    };
+    filePicker.click();
+    </script>
 </body>
 </html>
